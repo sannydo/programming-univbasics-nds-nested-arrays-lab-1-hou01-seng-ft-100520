@@ -33,7 +33,6 @@ end
 def matrix_lookup(matrix,row, column)
   row.each_with_index.map do |v,i| 
   column.each_with_index.map do |k,j| 
-    if (i-1>=0 && k == matrix[i-1][j])
   end
 end
 
