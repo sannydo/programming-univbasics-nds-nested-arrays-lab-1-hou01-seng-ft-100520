@@ -31,8 +31,8 @@ end
 #   # Return the matrix's content at that row and and column
   
 def matrix_lookup(matrix,row, column)
-    matrix.each_with_index.map do |v,i| 
-    v.each_with_index.map do |k,j| 
+    row.each_with_index.map do |v,i| 
+    column.each_with_index.map do |k,j| 
       if (i-1>=0 && k == matrix[i-1][j])
          k
       elsif (i+1 < matrix.length && k == matrix[i+1][j]) 
