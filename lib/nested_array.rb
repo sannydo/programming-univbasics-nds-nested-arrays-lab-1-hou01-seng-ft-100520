@@ -1,3 +1,4 @@
+
 # Examples inspired by U. S. National Organic Standards
 
 ORGANIC_PRODUCE = [
@@ -17,25 +18,37 @@ CONVENTIONAL_PRODUCE = [
 ]
 
 def assembled_matrix
-  # Build an array that contains both of the above arrays
-  # This matrix will represent a produce storage room
-  # Organic standards require that organic products be stored ABOVE conventional, not the other way around
-  # Make sure conventional produce is first, on the 'zeroth' / 'bottom' shelf
-end
+  assembled_matrix = [["Grapefruit", "Pineapple", "Oranges", "Watermelon", "Eggplant"], ["Strawberries", "Potatoes", "Grapes", "Avocadoes", "Asparagus"]]
+assembled_matrix = [CONVENTIONAL_PRODUCE,ORGANIC_PRODUCE]
+end 
 
 def sorted_matrix
-  # Using Array literal syntax only, build another nested array that 
-  # uses the arrays of conventional and organic produce as before.
-  # However, this time, sort each internal array alphabetically by the first character
+  sorted_matrix = [["Eggplant", "Grapefruit", "Oranges", "Pineapple", "Watermelon"], ["Asparagus", "Avocadoes", "Grapes", "Potatoes", "Strawberries"]]
+sorted_matrix = [CONVENTIONAL_PRODUCE.sort,ORGANIC_PRODUCE.sort]
 end
 
-def matrix_lookup(matrix, row, column)
-  # Given any matrix (array of arrays), a row index and a column index, 
-  # Return the matrix's content at that row and and column
+
+# def matrix_lookup(matrix, row, column)
+#   # Given any matrix (array of arrays), a row index and a column index, 
+#   # Return the matrix's content at that row and and column
+  
+def matrix_lookup(matrix,row, column)
+  new_value = sorted_matrix[row, column]
+  new_value = [1][1]
+  end
+ return new_value
 end
+ 
 
 def matrix_update(matrix, row, column, new_value)
-  # Given any matrix (array of arrays), a row index and a column index, 
-  # Update the matrix location at that row and column to have the value of new_value
-  # Return the updated matrix
+#   # Given any matrix (array of arrays), a row index and a column index, 
+#   # Update the matrix location at that row and column to have the value of new_value
+#   # Return the updated matrix
+  new_value = updated_matrix[row, column]
+  matrix = [1][1]
+  updated_matrix = matrix[1]
+  updated_matrix << [2][4]
+  return updated_matrix
+  end
+ end
 end
