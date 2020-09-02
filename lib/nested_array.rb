@@ -33,7 +33,7 @@ end
 def matrix_lookup(matrix,row, column)
   str = ""
   array = array.find{|a| a[1] == str}
-  puts array[0] if array
+  puts array[1] if array
 end
  
 
