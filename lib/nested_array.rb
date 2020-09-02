@@ -34,7 +34,6 @@ def matrix_lookup(matrix,row, column)
   str = "Potatoes"
   array = array.find{|a| a[1] == str}
   puts array[0] if array
-  return str
 end
  
 
