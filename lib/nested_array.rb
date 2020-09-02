@@ -32,7 +32,6 @@ end
   
 def matrix_lookup(matrix,row, column)
   row.each_with_index.map do |v,i| 
-  end
 end
 
  
