@@ -31,7 +31,7 @@ end
 #   # Return the matrix's content at that row and and column
   
 def matrix_lookup(matrix,row, column)
-  new_value = []
+  result = []
   counter = 0
   while counter < matrix.length
   ary.each_with_index do |row, i|
