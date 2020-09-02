@@ -32,8 +32,8 @@ end
   
 def matrix_lookup(matrix,row, column)
   str = "Potatoes"
-  arr = array.find{|a| a[1] == str}
-  puts arr[0] if arr
+  array = array.find{|a| a[1] == str}
+  puts array[0] if array
   return str
 end
  
