@@ -31,8 +31,12 @@ end
 #   # Return the matrix's content at that row and and column
   
 def matrix_lookup(matrix,row, column)
-  new_value = sorted_matrix[row, column]
-  new_value = [1][1]
+  new_value = []
+  counter = 0
+  while counter < matrix.length
+  
+  
+  counter += 1
   end
  return new_value
 end
