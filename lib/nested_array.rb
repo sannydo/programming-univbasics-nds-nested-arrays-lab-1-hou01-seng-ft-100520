@@ -31,9 +31,7 @@ end
 #   # Return the matrix's content at that row and and column
   
 def matrix_lookup(matrix,row, column)
-  hash = array.to_h 
-hash[key] = value 
-hash.invert[key] = value 
+  matrix = (row, column)
 end
 
  
