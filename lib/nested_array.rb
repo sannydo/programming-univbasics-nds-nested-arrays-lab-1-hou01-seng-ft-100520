@@ -31,10 +31,18 @@ end
 #   # Return the matrix's content at that row and and column
   
 def matrix_lookup(matrix,row, column)
-  str = ""
-  array = array.find{|a| a[1] == str}
-  puts array[1] if array
+    .each_with_index.map do |v,i| 
+    v.each_with_index.map do |k,j| 
+      if (i-1>=0 && k == matrix[i-1][j])
+         k
+      elsif (i+1 < matrix.length && k == matrix[i+1][j]) 
+         k 
+      else
+         nil  
+      end
+    end
 end
+
  
 
 #def matrix_update(matrix, row, column, new_value)
