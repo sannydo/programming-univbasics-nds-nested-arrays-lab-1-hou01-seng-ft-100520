@@ -32,14 +32,7 @@ end
   
 def matrix_lookup(matrix,row, column)
   result = []
-  counter = 0
-  while counter < matrix.length
-  row.each_with_index do |row, i|
-  column.each_with_index do |value, j|
-    result << [i, j] if value == 1
-  counter += 1
-  end
- result
+  
 end
  
 
