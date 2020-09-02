@@ -31,10 +31,10 @@ end
 #   # Return the matrix's content at that row and and column
   
 def matrix_lookup(matrix,row, column)
-  str = "Y"
-arr = array.find{|a| a[1] == str}
-puts arr[0] if arr
-  
+  str = "Potatoes"
+  arr = array.find{|a| a[1] == str}
+  puts arr[0] if arr
+  return str
 end
  
 
