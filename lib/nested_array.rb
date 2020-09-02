@@ -34,11 +34,13 @@ def matrix_lookup(matrix,row, column)
   new_value = []
   counter = 0
   while counter < matrix.length
-  
+  ary.each_with_index do |row, i|
+  row.each_with_index do |value, j|
+    result << [i, j] if value == 1
   
   counter += 1
   end
- return new_value
+ result
 end
  
 
